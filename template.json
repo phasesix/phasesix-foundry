@@ -13,6 +13,13 @@
           "min": 0,
           "max": 20
         },
+        "attributes": {
+          "quickness": {
+            "value": 1,
+            "min": 0,
+            "max": 10
+          }
+        },
         "biography": ""
       }
     },
