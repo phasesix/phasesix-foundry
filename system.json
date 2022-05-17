@@ -1,0 +1,28 @@
+{
+  "name": "phasesix",
+  "title": "Phase Six",
+  "description": "A free, flexible role playing game.",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "9",
+  "author": "Sven Bröckling",
+  "esmodules": ["module/phasesix.mjs"],
+  "styles": ["css/phasesix.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
+}
