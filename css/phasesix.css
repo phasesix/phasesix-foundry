@@ -13,7 +13,7 @@
 .grid,
 .grid-2col {
   display: grid;
-  grid-column: span 2 / span 2;
+  grid-column: span 2/span 2;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
   margin: 10px 0;
@@ -21,52 +21,52 @@
 }
 
 .grid-3col {
-  grid-column: span 3 / span 3;
+  grid-column: span 3/span 3;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-4col {
-  grid-column: span 4 / span 4;
+  grid-column: span 4/span 4;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-5col {
-  grid-column: span 5 / span 5;
+  grid-column: span 5/span 5;
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-6col {
-  grid-column: span 6 / span 6;
+  grid-column: span 6/span 6;
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .grid-7col {
-  grid-column: span 7 / span 7;
+  grid-column: span 7/span 7;
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .grid-8col {
-  grid-column: span 8 / span 8;
+  grid-column: span 8/span 8;
   grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
 .grid-9col {
-  grid-column: span 9 / span 9;
+  grid-column: span 9/span 9;
   grid-template-columns: repeat(9, minmax(0, 1fr));
 }
 
 .grid-10col {
-  grid-column: span 10 / span 10;
+  grid-column: span 10/span 10;
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
 .grid-11col {
-  grid-column: span 11 / span 11;
+  grid-column: span 11/span 11;
   grid-template-columns: repeat(11, minmax(0, 1fr));
 }
 
 .grid-12col {
-  grid-column: span 12 / span 12;
+  grid-column: span 12/span 12;
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
@@ -224,10 +224,15 @@
 }
 
 /* Styles limited to phasesix sheets */
+.phasesix {
+  /* ----------------------------------------- */
+  /*  Items Lists                              */
+  /* ----------------------------------------- */
+  /* Example style for PhaseSix (can be removed if not needed) */
+}
 .phasesix .item-form {
   font-family: "Roboto", sans-serif;
 }
-
 .phasesix .sheet-header {
   -webkit-box-flex: 0;
   -ms-flex: 0 auto;
@@ -247,7 +252,6 @@
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-
 .phasesix .sheet-header .profile-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100px;
@@ -255,50 +259,41 @@
   height: 100px;
   margin-right: 10px;
 }
-
 .phasesix .sheet-header .header-fields {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-
 .phasesix .sheet-header h1.charname {
   height: 50px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
 }
-
 .phasesix .sheet-header h1.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-
 .phasesix .sheet-tabs {
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
 }
-
 .phasesix .sheet-body,
 .phasesix .sheet-body .tab,
 .phasesix .sheet-body .tab .editor {
   height: 100%;
 }
-
 .phasesix .tox .tox-editor-container {
   background: #fff;
 }
-
 .phasesix .tox .tox-edit-area {
   padding: 0 8px;
 }
-
 .phasesix .resource-label {
   font-weight: bold;
 }
-
 .phasesix .items-header {
   height: 28px;
   margin: 2px 0;
@@ -310,12 +305,10 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-
 .phasesix .items-header > * {
   font-size: 14px;
   text-align: center;
 }
-
 .phasesix .items-header .item-name {
   font-weight: bold;
   padding-left: 5px;
@@ -324,7 +317,6 @@
   display: -ms-flexbox;
   display: flex;
 }
-
 .phasesix .items-list {
   list-style: none;
   margin: 0;
@@ -333,13 +325,11 @@
   scrollbar-width: thin;
   color: #444;
 }
-
 .phasesix .items-list .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .phasesix .items-list .item-name {
   -webkit-box-flex: 2;
   -ms-flex: 2;
@@ -355,13 +345,11 @@
   display: -ms-flexbox;
   display: flex;
 }
-
 .phasesix .items-list .item-name h3, .phasesix .items-list .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
-
 .phasesix .items-list .item-controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,13 +361,11 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-
 .phasesix .items-list .item-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
 }
-
 .phasesix .items-list .item {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -387,15 +373,12 @@
   padding: 0 2px;
   border-bottom: 1px solid #c9c7b8;
 }
-
 .phasesix .items-list .item:last-child {
   border-bottom: none;
 }
-
 .phasesix .items-list .item .item-name {
   color: #191813;
 }
-
 .phasesix .items-list .item .item-name .item-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30px;
@@ -405,14 +388,12 @@
   border: none;
   margin-right: 5px;
 }
-
 .phasesix .items-list .item-prop {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-
 .phasesix .items-list .items-header {
   height: 28px;
   margin: 2px 0;
@@ -424,24 +405,20 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-
 .phasesix .items-list .items-header > * {
   font-size: 12px;
   text-align: center;
 }
-
 .phasesix .items-list .items-header .item-name {
   padding-left: 5px;
   text-align: left;
 }
-
 .phasesix .item-formula {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 200px;
   flex: 0 0 200px;
   padding: 0 8px;
 }
-
 .phasesix .effects .item .effect-source,
 .phasesix .effects .item .effect-duration,
 .phasesix .effects .item .effect-controls {
@@ -450,7 +427,6 @@
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-
 .phasesix .effects .item .effect-controls {
   border: none;
 }
