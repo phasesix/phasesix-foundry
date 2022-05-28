@@ -6,12 +6,12 @@
         "health": {
           "value": 6,
           "min": 0,
-          "max": 20
+          "max": 6
         },
         "arcana": {
           "value": 0,
           "min": 0,
-          "max": 20
+          "max": 0
         },
         "attributes": {
           "quickness": {

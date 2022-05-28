@@ -7,6 +7,7 @@ import { PhaseSixItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { PHASESIX } from "./helpers/config.mjs";
+import { migrateWorld} from "./helpers/migrations.mjs";
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -19,18 +20,15 @@ Hooks.once('init', async function() {
   game.phasesix = {
     PhaseSixActor,
     PhaseSixItem,
-    rollItemMacro
+    rollItemMacro,
+    migrateWorld
   };
 
   // Add custom constants for configuration.
   CONFIG.PHASESIX = PHASESIX;
 
-  /**
-   * Set an initiative formula for the system
-   * @type {String}
-   */
   CONFIG.Combat.initiative = {
-    formula: "1d20",
+    formula: "1d6 + @attributes.quickness",
     decimals: 2
   };
 
@@ -74,6 +72,9 @@ Handlebars.registerHelper('toLowerCase', function(str) {
 Hooks.once("ready", async function() {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   Hooks.on("hotbarDrop", (bar, data, slot) => createItemMacro(data, slot));
+  if (game.user.isGM) {
+    migrateWorld();
+  }
 });
 
 /* -------------------------------------------- */

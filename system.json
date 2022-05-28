@@ -2,7 +2,7 @@
   "name": "phasesix",
   "title": "Phase Six",
   "description": "A free, flexible role playing game.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "9",
   "author": "Sven Bröckling",

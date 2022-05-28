@@ -5,5 +5,7 @@
   "PHASESIX.EffectEdit": "Edit Effect",
   "PHASESIX.EffectDelete": "Delete Effect",
 
-  "PHASESIX.Add": "Add"
+  "PHASESIX.Add": "Add",
+  "MIGRATION.Begin": "Starting migration",
+  "MIGRATION.End": "Finishing migration"
 }
