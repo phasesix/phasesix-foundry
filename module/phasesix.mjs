@@ -28,7 +28,7 @@ Hooks.once('init', async function() {
   CONFIG.PHASESIX = PHASESIX;
 
   CONFIG.Combat.initiative = {
-    formula: "1d6 + @attributes.quickness",
+    formula: "1d6 + @attributes.quickness.value",
     decimals: 2
   };
 
